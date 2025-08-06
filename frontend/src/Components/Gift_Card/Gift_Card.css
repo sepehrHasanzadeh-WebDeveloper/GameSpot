@@ -1,0 +1,203 @@
+.parent-all-card {
+  background-color: var(--secondary);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 150px;
+}
+
+.giftCard-item:hover {
+  transition: all 0.5s;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transform: translateY(-5px);
+}
+.giftCard-item:hover .btn-giftcard {
+  background-image: linear-gradient(161.15deg, #f83800 12.73%, #f8640a 72.95%);
+}
+.giftCard-item img {
+  border-radius: 7px;
+  width: 150px;
+  height: 150px;
+}
+.text-style {
+  margin: 8px 0;
+  font-size: 13px;
+  margin: 4px 0;
+  line-height: 30px;
+}
+.btn-giftcard {
+  background: linear-gradient(90deg, #9b5cff, #8642e0);
+  border: none;
+  border-radius: 12px;
+  padding: 8px 12px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin: 8px;
+  font-size: 14px;
+}
+
+.banner-wrapper {
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 30px auto;
+  max-width: 1352px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.banner-slider-container {
+  width: 100%;
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1352 / 326;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  background-color: #000;
+  border-radius: 20px;
+}
+
+/* دکمه‌های سفارشی */
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.089);
+  border-radius: 15px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  user-select: none;
+  box-shadow: rgba(255, 255, 255, 0.192) 0px 5px 15px;
+}
+
+.custom-swiper-button-prev {
+  left: 10px;
+}
+
+.custom-swiper-button-next {
+  right: 10px;
+}
+
+/* pagination bullets */
+.my-bullet {
+  background-color: white;
+  opacity: 0.7;
+  width: 20px;
+  height: 6px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin: 0 4px !important;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.my-bullet-active {
+  background-color: #007bff;
+  opacity: 1;
+  width: 30px;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+  .banner-wrapper {
+    padding: 0 15px;
+  }
+  .banner-image {
+    height: 200px;
+    aspect-ratio: 2 / 1;
+  }
+  /* مخفی کردن دکمه‌های سفارشی */
+  .custom-swiper-button-prev,
+  .custom-swiper-button-next {
+    display: none;
+  }
+  .my-bullet {
+    width: 14px;
+    height: 4px;
+  }
+  .my-bullet-active {
+    width: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-wrapper {
+    padding: 0 8px;
+  }
+  .banner-image {
+    width: 300px !important;
+    height: 200px !important;
+  }
+}
+.giftCard-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 320px;
+  min-height: 400px;
+}
+
+.card-title-fixed {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin: 6px 0;
+  min-height: 3.4em; /* حدود دو خط متن */
+  overflow: hidden;
+  display: -webkit-box;
+  --webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.btn-giftcard {
+  background: linear-gradient(90deg, #9b5cff, #8642e0);
+  border: none;
+  border-radius: 12px;
+  padding: 8px 12px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin: 8px;
+}
+
+.btn-giftcard:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+.noStock {
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+  .console-games p {
+    font-size: 0.875rem; /* حدود 14px */
+    line-height: 1.5;
+  }
+}
+.noStock {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}

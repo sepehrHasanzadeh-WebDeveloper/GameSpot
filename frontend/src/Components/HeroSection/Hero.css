@@ -1,0 +1,157 @@
+.banner-wrapper-hero {
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 30px auto;
+  max-width: 1352px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.banner-slider-container {
+  width: 100%;
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1352 / 326;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  background-color: #000;
+  border-radius: 20px;
+}
+
+/* دکمه‌های سفارشی */
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.089);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  user-select: none;
+}
+
+.custom-swiper-button-prev {
+  left: 10px;
+}
+
+.custom-swiper-button-next {
+  right: 10px;
+}
+
+/* pagination bullets */
+.my-bullet {
+  background-color: white;
+  opacity: 0.7;
+  width: 20px;
+  height: 6px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin: 0 4px !important;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.my-bullet-active {
+  background-color: #007bff;
+  opacity: 1;
+  width: 30px;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+  .banner-wrapper {
+    padding: 0 15px;
+  }
+  .banner-image {
+    height: 200px;
+    aspect-ratio: 2 / 1;
+  }
+  /* مخفی کردن دکمه‌های سفارشی */
+  .custom-swiper-button-prev,
+  .custom-swiper-button-next {
+    display: none;
+  }
+  .my-bullet {
+    width: 14px;
+    height: 4px;
+  }
+  .my-bullet-active {
+    width: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-wrapper {
+    padding: 0 8px;
+  }
+  .banner-image {
+    width: 300px !important;
+    height: 200px !important;
+  }
+}
+
+/* style for 3d Hero Section */
+
+.hero-bg {
+  background-color: #0d0d0d;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.hero-image-floating {
+  max-width: 100%;
+  height: auto;
+  animation: floatUpDown 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(0, 255, 255, 0.4));
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.hero-btn,
+.hero-btn-sec {
+  padding: 0.6rem 1.5rem;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+}

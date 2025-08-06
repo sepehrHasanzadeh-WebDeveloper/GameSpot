@@ -1,0 +1,240 @@
+.user-info-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  border-left: 1px solid gray;
+}
+.user-logo {
+  color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(6, 241, 241, 0.788);
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  cursor: pointer;
+}
+.user-info-col ul li {
+  margin: 20px 0;
+  transition: all 0.5s;
+  direction: ltr;
+}
+.user-info-col ul li:hover {
+  color: aqua;
+  transition: all 0.5s;
+}
+.user-info-col ul {
+  list-style-type: none;
+  margin-top: 21px;
+}
+.header-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.header-panel button {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: var(--secondary);
+  color: white;
+  transition: all 0.5s;
+}
+.header-panel button:hover {
+  color: red;
+  transition: all 0.5s;
+}
+.user-info-row {
+  width: 100%;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+.row-header {
+  background-color: #00ffa2;
+  border-radius: 10px;
+  color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-style-div {
+  padding: 20px;
+  transition: all 0.5s;
+}
+.p-style-div p:hover {
+  color: var(--primary);
+  transition: all 0.5s;
+}
+
+/* استایل برای کامپوننت تغییر حساب کاربری  */
+.user-form-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+}
+.input-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px 0;
+  width: 100%;
+}
+.label-input {
+  width: 100px;
+}
+.btn-update-info {
+  border: 0;
+  background-color: var(--accent);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 25px 0;
+  width: 100px;
+}
+
+/*  style for Address Book Componenet*/
+
+.div-noAddress {
+  margin: 10px 15px;
+  padding: 10px;
+}
+.form-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.input-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+}
+.input-row input {
+  width: 80%;
+  border-radius: 10px;
+  height: 40px;
+  border: 0;
+  padding: 8px;
+}
+.footer-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  padding: 5px;
+}
+.div-address-info-card {
+  width: 95%;
+  padding: 5px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.edit-address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-btn {
+  background-color: rgb(221, 76, 76);
+  border: 0;
+  color: white;
+  border-radius: 15px;
+  height: 40px;
+  width: 100px;
+}
+.edit-btn {
+  background-color: rgb(76, 221, 178);
+  border: 0;
+  color: white;
+  border-radius: 15px;
+  height: 40px;
+  width: 100px;
+  margin-right: 10px;
+}
+.address-info {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+/* style for witlist/ favoritList component  */
+.container-witlist {
+  margin: 10px 15px;
+
+  border-radius: 5px;
+  width: 95%;
+  overflow: hidden;
+}
+.img-product {
+  width: 80px;
+  height: 80px;
+}
+td {
+  text-align: center;
+  font-size: 15px;
+}
+td p {
+  margin-top: 35px;
+}
+th {
+  text-align: center;
+}
+
+.icon-cart {
+  background-color: green;
+  font-size: 35px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+.icon-delet {
+  background-color: red;
+  font-size: 35px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+.rounded-table {
+  overflow: hidden;
+}
+
+.rounded-table th {
+  color: #fff;
+  text-align: center;
+  background-color: var(--border);
+  border: 1px solid grey;
+  overflow: hidden;
+}
+.rounded-table tbody td {
+  background-color: var(--menuBackground) !important;
+  color: #f1f1f1;
+}
+
+.rounded-table tbody tr:hover {
+  background-color: var(--background2) !important; /* رنگ روی hover */
+}
+.empty-favorite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 25px 0;
+}
+.favorite-img {
+  width: 200px;
+  height: 250px;
+}

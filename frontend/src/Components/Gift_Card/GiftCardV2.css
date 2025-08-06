@@ -1,0 +1,70 @@
+.gift-section {
+  padding: 60px 20px;
+  background-color: #0e0e0e;
+  text-align: center;
+  color: white;
+}
+
+.gift-title {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.gift-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.gift-card {
+  background-color: #161616;
+  border-radius: 16px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 0 30px rgba(108, 99, 255, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.gift-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.gift-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  min-height: 50px; /* برای ثابت موندن ارتفاع عنوان */
+}
+
+.price {
+  font-size: 1rem;
+  color: #b5b5b5;
+  margin-bottom: 20px;
+}
+
+.buy-btn {
+  margin-top: auto; /* دکمه همیشه می‌ره پایین‌ترین بخش کارت */
+  background: linear-gradient(135deg, #6c63ff, #836fff);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.buy-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(108, 99, 255, 0.5);
+}
+
+.gift-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(108, 99, 255, 0.3);
+}

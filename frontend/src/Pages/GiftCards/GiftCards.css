@@ -1,0 +1,32 @@
+.Container-giftcard-style {
+  border-radius: 20px;
+  box-shadow: rgba(241, 241, 241, 0.35) 0px 5px 15px;
+  padding: 25px;
+  margin-top: 100px;
+}
+.Articels-giftcard-style {
+  border-radius: 15px;
+  background-color: var(--secondary);
+  margin-top: 50px;
+}
+.Articels-giftcard-style h5 {
+  margin: 25px;
+  font-weight: bold;
+}
+.Articels-giftcard-style p {
+  line-height: 35px;
+  font-size: 14px;
+}
+.GiftImg-style {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .console-games p {
+    font-size: 0.875rem; /* حدود 14px */
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text: #f5f5f5;
+  --background: #0d0d0d;
+  --primary: #00e1ff;
+  --secondary: #1f1f1f;
+  --accent: #00ffa2;
+}
+:root {
+  --background2: #1e1e2f;
+  --menuBackground: #2c2c3c;
+  --border: #3a3a4d;
+  --textPrimary: #eaeaea;
+  --textSecondary: #aaaaaa;
+  --highlight: #3b82f6;
+  --success: #10b981;
+  --danger: #ef4444;
+}
+@font-face {
+  font-family: "vazir";
+  src: url("./assets/Fonts/vazir-font-v16.1.0/Vazir-Medium.ttf");
+}
+.vazir {
+  font-family: "vazir" sans-serif;
+}
+@font-face {
+  font-family: "byekan";
+  src: url("./assets/Fonts/BYekan/BYekan+.ttf");
+}
+.Byekan {
+  font-family: "byekan" sans-serif;
+}
+@font-face {
+  font-family: "estedad";
+  src: url("./assets/Fonts/Estedad-v5.0-Fontjo.com/ttf/Estedad-Medium.ttf");
+}
+.estedad {
+  font-family: "estedad" sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "estedad";
+  color: var(--text);
+  direction: rtl;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(189, 188, 188);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #00e1ff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #03b6ce;
+}

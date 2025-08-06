@@ -1,0 +1,97 @@
+/* بک‌گراند ویدیویی */
+.doom-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #000; /* fallback */
+  z-index: 0;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.25;
+  filter: brightness(0.7) contrast(1.2) saturate(1.1);
+}
+
+/* محتوا داخل سکشن */
+.doom-content {
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.doom-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff4d4d;
+  margin-bottom: 1rem;
+}
+
+.doom-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+
+.doom-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.doom-features li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.glow-btn {
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 20px red;
+}
+
+/* عکس doom */
+.doom-image-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.doom-image {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+/* واکنش‌گرا */
+@media (max-width: 768px) {
+  .doom-title {
+    font-size: 2rem;
+  }
+
+  .doom-subtitle {
+    font-size: 1rem;
+  }
+
+  .doom-features li {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}

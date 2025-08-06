@@ -1,0 +1,123 @@
+.chatBox-user-container {
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px var(--primary);
+  padding: 20px;
+}
+
+.chat-bubble {
+  max-width: 60%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  position: relative;
+  background: #1495d1; /* رنگ پیام سمت کاربر */
+  margin-bottom: 10px;
+}
+.chat-bubble-user {
+  max-width: 60%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  position: relative;
+  background: #d1ae14; /* رنگ پیام سمت کاربر */
+  margin-bottom: 10px;
+}
+
+.chat-bubble::after,
+.chat-bubble-user::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+
+  border-bottom: 10px solid transparent;
+}
+.chat-wrapper {
+  position: relative;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.chat-input-bar {
+  position: sticky;
+  bottom: 0;
+
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  border: 0;
+  border-radius: 15px;
+}
+.send-msg-btn {
+  border: 0;
+  border-radius: 10px;
+  width: 100px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+.input-style {
+  background-image: linear-gradient(220.55deg, #eaeaea 0%, #8b8b8b 100%);
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.chat-wrapper {
+  padding: 10px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.chat-bubble {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 75%;
+}
+
+.chat-bubble.user {
+  background: #1495d1;
+  align-self: flex-start;
+}
+
+.chat-bubble.admin {
+  background: #d1ae14;
+  align-self: flex-end;
+}
+
+.chat-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.chat-input-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.input-style {
+  flex: 1;
+  padding: 8px;
+}
+
+.send-msg-btn {
+  padding: 8px 16px;
+}

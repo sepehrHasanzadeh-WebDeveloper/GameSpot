@@ -1,0 +1,87 @@
+.custom-table-wrapper {
+  background-color: #212529;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.rounded-table {
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/*admin amin Page*/
+
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-image: linear-gradient(180deg, #11aeeb, #35f39d);
+
+  border-radius: 20px;
+}
+.menu-bar ul li {
+  list-style-type: none;
+  margin: 30px 0;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.menu-bar ul li:hover {
+  transition: all 0.5s;
+  color: black;
+}
+.admin-prof {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.admin-prof img {
+  width: 150px;
+  height: 150px;
+}
+.col-option p {
+  padding: 10px;
+}
+.admin-title {
+  font-size: 25px;
+  color: var(--textPrimary);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-item {
+  cursor: pointer;
+  color: var(--textSecondary);
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-item:hover {
+  background-color: #3a3a4d;
+  color: white;
+}
+
+.menu-item.active {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+}
+.export-btn {
+  margin-top: 15px;
+  border: 0;
+  border-radius: 5px;
+  height: 35px;
+  text-align: center;
+  background-color: var(--success);
+  padding: 5px;
+  color: white;
+}

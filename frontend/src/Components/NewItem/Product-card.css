@@ -1,0 +1,39 @@
+.container-card {
+  border-radius: 10px;
+  transition: all 0.5s;
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container-card:hover {
+  transition: all 0.5s;
+  transform: translateY(-8px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-swiper img {
+  width: 100px;
+  height: 100px;
+}
+.btn-swiperCard {
+  border: 0;
+  border-radius: 15px;
+  background-image: linear-gradient(161.15deg, #30b486 12.73%, #5eeab9 72.95%);
+  width: 150px;
+  text-align: center;
+  color: white;
+  height: 30px;
+  font-size: 15px;
+  margin: 10px 0;
+}
+.btn-swiperCard:hover {
+  transition: all 0.5s;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+.card-swiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
